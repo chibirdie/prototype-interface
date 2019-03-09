@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <div class="app">
+      <div class="tabs">
+        <div class="tab selected" id="school">School</div>
+        <div class="tab" id="personal">Personal</div>
+        <div class="tab" id="work">Work</div>
+      </div>
+
+      <div class="list">
+        <div class="category">
+          <div class="header">Outstanding</div>
+          <ul>
+            <li>Math homework <div class="deadline">due tomorrow</div><div class="urgent">!</div></li>
+            <li>Science quiz <div class="deadline">due in 3 days</div></li>
+            <li>Band practice <div class="deadline">due in 5 days</div></li>
+            <div id="new" class="new">Add new</div>
+          </ul>
+        </div>
+
+        <div class="category">
+          <div class="header">Completed</div>
+          <ul>
+            <li class="done">Piano practice</li>
+            <li class="done">French lesson</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="window-container" class="window-container hidden">
+        <div class="window">
+          <div class="header">New Task</div>
+          <input class="title" type="text" placeholder="Title">
+          <div class="label">Urgency</div>
+          <select>
+            <option value="normal">Normal</option>
+            <option value="urgent">Urgent</option>
+          </select>
+          <div class="label">Due date</div>
+          <input type="date">
+          <div class="label">Label</div>
+          <select>
+            <option value="school">School</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+          </select>
+          <button>Add</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
